@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swayam Modhia-C0934904-Assignment 5-3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Swayam Modhia’s Tech talk for this week</h1>
+    
+    <!-- Audio Element -->
+    <section>
+        <h2>Swayam Modhia’s Tech talk for this week</h2>
+        <audio controls>
+            <source src="./audio/audio_tag_swayam.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <p>In this audio clip, I describe what the <code>&lt;audio&gt;</code> tag is doing and how to use it.</p>
+    </section>
+    
+    <!-- Video Element -->
+    <section>
+        <h2>Swayam Modhia’s video clip for this week</h2>
+        <video controls poster="./image/logo.jpg">
+            <source src="./video/1.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <p>This video clip is about HTML. The image displayed is related to the video content.</p>
+    </section>
+</body>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+        color: #333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    h1 {
+        background: #3a8fb7;
+        color: white;
+        padding: 30px;
+        margin: 0;
+        font-size: 3em;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        border-bottom: 5px solid #1e5b91;
+    }
+    section {
+        margin: 30px auto;
+        padding: 30px;
+        max-width: 80%;
+        border-radius: 20px;
+        background: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    section:hover {
+        transform: scale(1.02);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+    h2 {
+        color: #3a8fb7;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    audio, video {
+        margin: 20px 0;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    video {
+        width: 90%;
+        max-width: 1000px;
+        transition: transform 0.3s;
+    }
+    video:hover {
+        transform: scale(1.02);
+    }
+    p {
+        font-size: 1.2em;
+        color: #555;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+    code {
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        padding: 5px;
+        border-radius: 5px;
+        color: #d63384;
+    }
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.2em;
+        }
+        section {
+            max-width: 95%;
+            padding: 20px;
+        }
+        video {
+            width: 100%;
+        }
+    }
+</style>
+</html>

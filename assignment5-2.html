@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swayam Modhia - C0934904 - Assignment 5-2</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Fill Out Our Registration Form</h1>
+        <form action="myform.php" method="get">
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interests" value="Web Development"> Web Development</label>
+                <label><input type="checkbox" name="interests" value="Programming"> Programming</label>
+                <label><input type="checkbox" name="interests" value="Electronics"> Electronics</label>
+                <label><input type="checkbox" name="interests" value="Artificial Intelligence"> Artificial Intelligence</label>
+            </div>
+            <div class="radio-group">
+                <label><input type="radio" name="subscription" value="Monthly"> Monthly ($5/mo)</label>
+                <label><input type="radio" name="subscription" value="Yearly"> Yearly ($50/yr)</label>
+                <label><input type="radio" name="subscription" value="Lifetime"> Lifetime ($150)</label>
+            </div>
+            <label for="province">Select your province:</label>
+            <select name="province" id="province">
+                <option value="Ontario">Ontario</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="Calgary">Calgary</option>
+            </select>
+            <div class="address-group">
+                <label for="address1">Address 1: House/apt #, street name:</label>
+                <input type="text" name="address1" id="address1">
+                <label for="address2">Address 2: City, Province, Postal code:</label>
+                <input type="text" name="address2" id="address2">
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <label for="opinion">Let us know your opinion:</label>
+            <textarea name="opinion" id="opinion" rows="4"></textarea>
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset Form">
+            </div>
+        </form>
+    </div>
+</body>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .form-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        max-width: 600px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    h1 {
+        text-align: center;
+        color: #343a40;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #495057;
+        display: flex;
+        align-items: center;
+    }
+    input[type="text"], input[type="tel"], select, textarea {
+        padding: 14px;
+        border: 1px solid #ced4da;
+        border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+        background: #ffffff;
+        color: #495057;
+        transition: all 0.3s ease;
+    }
+    input[type="text"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+        outline: none;
+    }
+    .checkbox-group, .radio-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    .checkbox-group label, .radio-group label {
+        display: flex;
+        align-items: center;
+    }
+    input[type="checkbox"], input[type="radio"] {
+        margin-right: 10px;
+        accent-color: #007bff; /* Modern browsers support this */
+    }
+    .address-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+    }
+    .buttons input {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        color: white;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    .buttons input[type="submit"] {
+        background-color: #007bff;
+    }
+    .buttons input[type="submit"]:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+    .buttons input[type="reset"] {
+        background-color: #dc3545;
+    }
+    .buttons input[type="reset"]:hover {
+        background-color: #c82333;
+        transform: scale(1.05);
+    }
+    select {
+        appearance: none;
+        background: #ffffff;
+        background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"%3E%3Cpath d="M1 1l4 4 4-4" fill="none" stroke="%23495057" stroke-width="1.5" /%3E%3C/svg%3E');
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 12px;
+        padding-right: 40px;
+    }
+    textarea {
+        resize: vertical;
+    }
+</style>
+</html>
